@@ -1,0 +1,42 @@
+// Copyright (c) 2022 NetEase, Inc. All rights reserved.
+// Use of this source code is governed by a MIT license that can be
+// found in the LICENSE file.
+
+buildscript {
+    ext.kotlin_version = '1.8.0'
+    repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google'  }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        // google()
+        mavenCentral()
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.huawei.agconnect:agcp:1.6.5.300'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url  'https://maven.aliyun.com/nexus/content/repositories/google'  }
+        maven { url  'https://maven.aliyun.com/nexus/content/groups/public' }
+        // google()
+        mavenCentral()
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,71 @@
+{
+  "@@locale": "en",
+  "appName": "Netease IM",
+  "yunxinName": "Netease CommsEase",
+  "yunxinDesc": "Stable instant messaging service",
+  "welcomeButton": "register/login",
+  "message": "message",
+  "contact": "contact",
+  "mine": "mine",
+  "conversation": "conversation",
+  "dataIsLoading": "Loading...",
+  "tabMineAccount": "Account:{account}",
+  "@tabMineAccount": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "mineCollect": "Collect",
+  "mineAbout": "About",
+  "mineSetting": "Setting",
+  "mineVersion": "Version",
+  "mineProduct": "Product introduction",
+  "userInfoTitle": "User info",
+  "userInfoAvatar": "Avatar",
+  "userInfoAccount": "Account",
+  "userInfoNickname": "Nickname",
+  "userInfoSexual": "Sex",
+  "userInfoBirthday": "Birthday",
+  "userInfoPhone": "Phone",
+  "userInfoEmail": "Email",
+  "userInfoSign": "Signature",
+  "actionCopySuccess": "Copy success!",
+  "sexualMale": "Male",
+  "sexualFemale": "Female",
+  "sexualUnknown": "Unknown",
+  "userInfoComplete": "Complete",
+  "requestFail": "Request fail",
+  "mineLogout": "Logout",
+  "logoutDialogContent": "Are you sure to log out of the current login account?",
+  "logoutDialogAgree": "YES",
+  "logoutDialogDisagree": "NO",
+  "settingNotify": "Notify",
+  "settingClearCache": "Clear cache",
+  "settingPlayMode": "Handset mode",
+  "settingFilterNotify": "Filter notify",
+  "settingFriendDeleteMode": "Delete notes when deleting friends",
+  "settingMessageReadMode": "Message read and unread function",
+  "settingNotifyInfo": "New message notification",
+  "settingNotifyMode": "Message reminder mode",
+  "settingNotifyModeRing": "Ring Mode",
+  "settingNotifyModeShake": "Vibration Mode",
+  "settingNotifyPush": "Push settings",
+  "settingNotifyPushSync": "Receive pushes synchronously on PC/Web",
+  "settingNotifyPushDetail": "Notification bar does not show message details",
+  "clearMessage": "Clear all chat history",
+  "clearSdkCache": "Clear SDK file cache",
+  "clearMessageTips": "Chat history has been cleaned up",
+  "cacheSizeText": "{size} M",
+  "@cacheSizeText": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "notUsable": "Feature not yet available",
+  "settingFail": "Setting failed",
+  "settingSuccess": "Set successfully"
+}

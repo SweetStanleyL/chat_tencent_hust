@@ -75,8 +75,7 @@ class _SplashState extends State<SplashPage> {
   }
 
   void startLogin(String account, String token) {
-    //String account = "nightingale7666";
-    //String token = "515138"; 可直接初始化
+    // 可直接初始化
     IMKitClient.loginIM(NIMLoginInfo(account: account, token: token))
         .then((value) {
       if (value) {
